@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <TextView
+        android:id="@+id/textViewFrageLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deine Frage" />
+
+    <EditText
+        android:id="@+id/frage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="nur Ja oder Nein" />
+    
+    <TextView 
+        android:id="@+id/textViewDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Datum"/>
+
+    <EditText
+        android:id="@+id/dateTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="false"
+        android:text=""
+        android:hint="DATUM"
+        android:onClick="showDatePickerDialog" />
+    
+   
+    <TextView 
+        android:id="@+id/textViewTimeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Uhrzeit"/>
+    
+    <EditText
+        android:id="@+id/timeTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="false"
+        android:text=""
+        android:hint="UHRZEIT"
+        android:onClick="showTimePickerDialog" />
+ 
+    
+    <Button
+        android:id="@+id/abschicken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOL"
+        android:onClick="onClick"
+    />
+    
+
+</LinearLayout>

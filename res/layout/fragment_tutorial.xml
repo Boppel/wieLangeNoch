@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="horizontal">
+
+    <ScrollView
+        android:id="@+id/tutpage1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            style="?android:textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="16dp"
+             />
+
+    </ScrollView>
+    
+
+</LinearLayout>
