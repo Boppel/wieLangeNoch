@@ -4,21 +4,35 @@
     android:orientation="vertical"
     android:padding="10dp" >
     
+    <TextView
+        android:id="@+id/menu"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" 
+        android:text="menü"
+        android:textSize="16pt"
+        android:gravity="center"
+        android:layout_weight="0"
+    />
+    
+    <View android:layout_height="300dp"
+          android:layout_width="fill_parent"/>
     
     <Button android:id="@+id/zurUebersicht"
-        	android:layout_width="300dp"
-        	android:layout_height="200dp"
-        	android:text="zur Übersicht"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="übersicht"
         	android:textAlignment="center"
         	android:onClick="onClick"
+        	android:layout_weight="1"
     />
     
     <Button android:id="@+id/zumMaker"
-        	android:layout_width="300dp"
-        	android:layout_height="200dp"
-        	android:text="zum Maker"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="neuer countdown"
         	android:textAlignment="center"
         	android:onClick="onClick"
+        	android:layout_weight="1"
     />
 
 </LinearLayout>

@@ -3,62 +3,90 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin" >
+    android:padding="10dp">
 
     <TextView
         android:id="@+id/textViewFrageLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Deine Frage" />
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="deine frage"
+        android:textSize="16pt"
+        android:gravity="center"
+        android:layout_weight="0"/>
 
     <EditText
         android:id="@+id/frage"
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="nur Ja oder Nein" />
+        android:ellipsize="start"
+        android:hint="mit ja oder nein beantwortbar"
+        android:text=""
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_weight="0" />
+    
+    <View android:layout_height="20dp"
+        android:layout_width="fill_parent"/>
     
     <TextView 
         android:id="@+id/textViewDateLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Datum"/>
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="dein datum"
+        android:textSize="16pt"
+        android:gravity="center"
+        android:layout_weight="0"/>
 
     <EditText
         android:id="@+id/dateTextField"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:focusableInTouchMode="false"
         android:text=""
-        android:hint="DATUM"
+        android:ellipsize="start"
+        android:gravity="center"
+        android:hint="dd.mm.yyyy"
+        android:layout_weight="0"
         android:onClick="showDatePickerDialog" />
+    
+        <View android:layout_height="20dp"
+        android:layout_width="fill_parent"/>
     
    
     <TextView 
         android:id="@+id/textViewTimeLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Uhrzeit"/>
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="deine zeit"
+        android:textSize="16pt"
+        android:gravity="center"
+        android:layout_weight="0"/>
     
     <EditText
         android:id="@+id/timeTextField"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:focusableInTouchMode="false"
         android:text=""
-        android:hint="UHRZEIT"
-        android:onClick="showTimePickerDialog" />
+        android:ellipsize="start"
+        android:gravity="center"
+        android:hint="darf auch gerne leer bleiben"
+        android:onClick="showTimePickerDialog"
+        android:layout_weight="0" />
+    
+    <View android:layout_width="fill_parent"
+          android:layout_height="100dp"
+          android:layout_weight="1"/>
  
     
     <Button
         android:id="@+id/abschicken"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="LOL"
+        android:text="m'kay"
         android:onClick="onClick"
+        android:layout_weight="1"
     />
     
 
